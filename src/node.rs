@@ -218,7 +218,7 @@ impl<T> Node<T> {
         children.swap_remove(index);
     }
 
-    pub(crate) fn children_mut(&mut self) -> &mut Vec<NodeId> {
+    pub fn children_mut(&mut self) -> &mut Vec<NodeId> {
         &mut self.children
     }
 
