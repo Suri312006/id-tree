@@ -222,7 +222,7 @@ impl<T> Node<T> {
         &mut self.children
     }
 
-    pub(crate) fn set_children(&mut self, children: Vec<NodeId>) {
+    pub fn set_children(&mut self, children: Vec<NodeId>) {
         self.children = children;
     }
 
